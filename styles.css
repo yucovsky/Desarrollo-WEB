@@ -11,23 +11,65 @@ header {
     color: #ffeeee;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Cambiado para centrar verticalmente */
+    align-items: center;
     padding: 10px;
-    height: 100px; /* Altura fija para el header */
-    box-sizing: border-box; /* Asegura que el padding no afecte la altura total */
+    height: 100px;
+    box-sizing: border-box;
 }
 
 header h1 {
-    margin: 10px; /* Elimina márgenes por defecto del h1 */
-    font-size: 1.5rem; /* Ajusta el tamaño de fuente según sea necesario */
+    margin: 10px;
 }
 
 .logo {
-    margin: 0; /* Elimina márgenes innecesarios */
-}
-
-.logo-img {
     width: 80px;
     height: 80px;
 }
 
+.image {
+    width: 80px;
+    height: 80px;
+    transition: filter 0.3s ease;
+}
+
+.image:hover {
+    filter: grayscale(100%);
+}
+
+.tabla {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #000000;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+}
+
+.fila {
+    display: flex;
+    border-bottom: 1.5px solid #000000;
+}
+
+.fila.header {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.celda {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.fila:last-child {
+    border-bottom: none;
+}
+
+.celda {
+    border-right: 1.5px solid #000000;
+}
+
+.celda:last-child {
+    border-right: none;
+}
