@@ -26,7 +26,6 @@ header h1 {
     height: 80px;
 
 }
-
 .image {
     width: 70px;
     height: 70px;
@@ -42,7 +41,6 @@ header h1 {
     flex-direction: column;
     border: 3px solid #000000;
     border-radius: 4px;
-    overflow: hidden;
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
@@ -64,8 +62,7 @@ header h1 {
     flex: 1;
     padding: 15px;
     text-align: center;
-    overflow: hidden;
-    word-wrap: break-word;
+
 }
 
 .fila:last-child {
@@ -80,22 +77,16 @@ header h1 {
     border-right: none;
 }
 
-.celda.correo {
-    flex: 2; /* Aumenta el espacio disponible para la celda de correo */
-    min-width: 200px; /* Establece un ancho mínimo para evitar que el contenido desborde */
-}
-
 .correo {
     font-family: Arial, sans-serif; /* Estilo de fuente opcional */
     font-size: 16px; /* Tamaño de fuente opcional */
     color: #0000EE; /* Color azul típico de enlaces */
     text-decoration: underline; /* Subrayado */
     cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el texto */
-    display: block; /* Asegura que el enlace ocupe todo el espacio disponible */
-    overflow-wrap: break-word; /* Permite que el texto se ajuste dentro de la celda */
-    word-break: break-all; /* Rompe las palabras largas para evitar el desbordamiento */
 }
 
 .correo:hover {
     color: #551A8B; /* Color más oscuro para el efecto hover */
 }
+
+  
