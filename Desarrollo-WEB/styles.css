@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #B91C1C;
+    color: #ffeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin: 10px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+.image {
+    width: 70px;
+    height: 70px;
+    transition: filter 0.6s ease;
+}
+
+.image:hover {
+    filter: grayscale(100%);
+}
+
+.tabla {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 75px auto;
+    border: 3px solid #000000;
+    overflow: hidden;
+}
+
+.fila {
+    display: flex;
+    flex-direction: row;
+}
+
+.fila.header {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.celda {
+    flex: 1;
+    padding: 15px;
+    border-bottom: 1.5px solid #000000;
+    border-right: 1.5px solid #000000;
+    text-align: center;
+    min-width: 50px;
+}
+
+.fila:last-childcelda {
+    border-bottom: none;
+}
+
+.celda:last-child {
+    border-right: none;
+}
+
+.celda img {
+    width: 100px;
+    height: auto;
+}
+
+.correo {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #0000EE;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.correo:hover {
+    color: #551A8B;
+}
