@@ -22,10 +22,17 @@ header h1 {
 }
 
 .logo {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
+    padding-right: 5px ;
 
 }
+
+.logo:hover{
+    animation: vibracion 0.3s ease-in-out;
+    animation-iteration-count: 3;
+}
+
 .image {
     width: 70px;
     height: 70px;
@@ -39,18 +46,16 @@ header h1 {
 .tabla {
     display: flex;
     flex-direction: column;
+    width: 75%;
+    margin: 75px auto;
     border: 3px solid #000000;
-    border-radius: 4px;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    margin-top: 40px;
+    overflow: hidden;
+    table-layout: fixed;
 }
 
 .fila {
     display: flex;
-    border-bottom: 1.5px solid #000000;
-    align-items: center;
+    flex-direction: row;
 }
 
 .fila.header {
@@ -61,16 +66,15 @@ header h1 {
 .celda {
     flex: 1;
     padding: 15px;
+    border-bottom: 1.5px solid #000000;
+    border-right: 1.5px solid #000000;
     text-align: center;
-
+    min-width: 10px;
+    overflow-wrap: break-word;
 }
 
 .fila:last-child {
     border-bottom: none;
-}
-
-.celda {
-    border-right: 1.5px solid #000000;
 }
 
 .celda:last-child {
@@ -78,15 +82,25 @@ header h1 {
 }
 
 .correo {
-    font-family: Arial, sans-serif; /* Estilo de fuente opcional */
-    font-size: 16px; /* Tamaño de fuente opcional */
-    color: #0000EE; /* Color azul típico de enlaces */
-    text-decoration: underline; /* Subrayado */
-    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el texto */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #0000EE;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .correo:hover {
-    color: #551A8B; /* Color más oscuro para el efecto hover */
+    color: #551A8B;
 }
 
-  
+@keyframes vibracion {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20%, 60% {
+        transform: translateX(-3px);
+    }
+    40%, 80% {
+        transform: translateX(3px);
+    }
+}
