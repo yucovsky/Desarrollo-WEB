@@ -34,8 +34,9 @@ header h1 {
 }
 
 .image {
-    width: 70px;
-    height: 70px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover; 
     transition: filter 0.6s ease;
 }
 
@@ -46,8 +47,10 @@ header h1 {
 .tabla {
     display: flex;
     flex-direction: column;
-    width: 75%;
-    margin: 75px auto;
+    width: 60%;
+    margin: 40px auto;
+    margin-bottom: 0%;
+    margin-top: 1.75%;
     border: 3px solid #000000;
     overflow: hidden;
     table-layout: fixed;
@@ -68,9 +71,22 @@ header h1 {
     padding: 15px;
     border-bottom: 1.5px solid #000000;
     border-right: 1.5px solid #000000;
-    text-align: center;
+    text-align: center; /* Centra el texto horizontalmente */
+    vertical-align: middle; /* Asegúrate de que el texto esté centrado verticalmente */
     min-width: 10px;
     overflow-wrap: break-word;
+    display: flex; /* Usa flexbox para centrar el texto verticalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    justify-content: center; /* Centra el texto horizontalmente */
+}
+
+
+.celda.ancha{
+    flex: 2;
+}
+
+.celda.estrecha{
+    flex: 0.5;
 }
 
 .fila:last-child {
