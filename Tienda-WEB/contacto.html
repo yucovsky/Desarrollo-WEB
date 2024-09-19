@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Contacto</title>
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-gray-800 text-white p-4">
+        <nav>
+            <ul class="flex justify-center space-x-4">
+                <li><a href="index.html" class="hover:text-gray-400">Inicio</a></li>
+                <li><a href="catalogo.html" class="hover:text-gray-400">Catálogo</a></li>
+                <li><a href="contacto.html" class="hover:text-gray-400">Contacto</a></li>
+                <li><a href="sobre_nosotros.html" class="hover:text-gray-400">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="p-5 pb-50">
+        <h1 class="text-3xl font-bold">Contacto</h1>
+        <p class="mt-4">Podés ponerte en contacto con nosotros mediante el siguiente formulario:</p>
+        <form class="mt-4">
+            <label for="nombre" class="block">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required class="border p-2 mt-1 w-full">
+            
+            <label for="apellido" class="block">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required class="border p-2 mt-1 w-full">
+            
+            <label for="email" class="block mt-4">Email:</label>
+            <input type="email" id="email" name="email" required class="border p-2 mt-1 w-full">
+
+            <label for="consulta" class="block mt-4">Consulta:</label>
+            <textarea id="consulta" name="consulta" required class="border p-2 mt-1 w-full" rows="4"></textarea>
+
+            <input type="submit" value="Enviar" class="mt-4 bg-blue-500 text-white p-2 hover:bg-blue-600">
+        </form>
+    </main>
+</body>
+</html>
