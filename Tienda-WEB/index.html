@@ -4,23 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <title>Landpage</title>
+    <title>Inicio</title>
+    <style>
+        .no-select {
+            user-select: none;
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
-    <header class="bg-gray-800 text-white p-4">
-        <nav>
+    <header class="bg-red-700 text-white p-4 flex flex-col items-center">
+        <div class="flex items-center mb-2">
+            <img src="logo.png" alt="Logo" class="h-10 w-10 mr-2">
+            <img src="nombre.png" alt="Nombre" class="h-10">
+        </div>
+        <nav class="w-full">
             <ul class="flex justify-center space-x-4">
-                <li><a href="index.html" class="hover:text-gray-400">Inicio</a></li>
+                <li><a href="index.html" class="hover:text-gray-400 underline">Inicio</a></li>
                 <li><a href="catalogo.html" class="hover:text-gray-400">Catálogo</a></li>
                 <li><a href="contacto.html" class="hover:text-gray-400">Contacto</a></li>
                 <li><a href="sobre_nosotros.html" class="hover:text-gray-400">Sobre Nosotros</a></li>
             </ul>
         </nav>
     </header>
-    
-    <main class="p-6">
-        <h1 class="text-3xl font-bold">Bienvenido a Nuestra Página</h1>
-        <p class="mt-4">Explora nuestros productos y servicios.</p>
+
+    <section class="w-full bg-purple-600 text-yellow-400 text-center py-8 no-select">
+        <h2 class="text-4xl font-bold mb-4">INCREÍBLES OFERTAS A INCREÍBLES PRECIOS</h2>
+        <p class="text-xl">Zarrrrrrrrrpadas ofertas a unos precios A-N-A-L-E-S</p>
+        <a class="mt-4 inline-block bg-yellow-400 text-black py-2 px-4 rounded hover:bg-yellow-500 font-bold no-select">Ver Ofertas</a>
+    </section>
+
+    <main class="p-6 text-center">
+        <h1 class="text-3xl font-bold mb-6">Productos Destacados</h1>
+
+        <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-200 hover:scale-105 relative">
+                <span class="absolute top-2 left-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">¡Más vendido!</span>
+                <img src="japi.jpeg" alt="Cerveza Japi" class="w-full h-48 object-contain">
+                <div class="p-4">
+                    <h2 class="font-bold text-xl">Cerveza Japi</h2>
+                    <p class="text-gray-700 mt-2">$69.00</p>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-200 hover:scale-105 relative">
+                <span class="absolute top-2 left-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">¡Más vendido!</span>
+                <img src="choriflan.jpeg" alt="Choriflan" class="w-full h-48 object-contain">
+                <div class="p-4">
+                    <h2 class="font-bold text-xl">Choriflan</h2>
+                    <p class="text-gray-700 mt-2">$100.00</p>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-200 hover:scale-105 relative">
+                <span class="absolute top-2 left-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">¡Más vendido!</span>
+                <img src="cabalgatacola.jpeg" alt="Cabalgata Cola" class="w-full h-48 object-contain">
+                <div class="p-4">
+                    <h2 class="font-bold text-xl">Cabalgata Cola</h2>
+                    <p class="text-gray-700 mt-2">$200.00</p>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-200 hover:scale-105 relative">
+                <span class="absolute top-2 left-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">¡Más vendido!</span>
+                <img src="djmariio.jpeg" alt="Perfume Djmariio" class="w-full h-48 object-contain">
+                <div class="p-4">
+                    <h2 class="font-bold text-xl">Perfume Djmariio</h2>
+                    <p class="text-gray-700 mt-2">$350.00</p>
+                </div>
+            </div>
+
+        </section>
     </main>
 </body>
 </html>

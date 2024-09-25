@@ -12,12 +12,16 @@
     </style>
 </head>
 <body class="bg-gray-100">
-    <header class="bg-gray-800 text-white p-4">
-        <nav>
+    <header class="bg-red-700 text-white p-4 flex flex-col items-center">
+        <div class="flex items-center mb-2">
+            <img src="logo.png" alt="Logo" class="h-10 w-10 mr-2">
+            <img src="nombre.png" alt="Nombre" class="h-10">
+        </div>
+        <nav class="w-full">
             <ul class="flex justify-center space-x-4">
                 <li><a href="index.html" class="hover:text-gray-400">Inicio</a></li>
                 <li><a href="catalogo.html" class="hover:text-gray-400">Catálogo</a></li>
-                <li><a href="contacto.html" class="hover:text-gray-400">Contacto</a></li>
+                <li><a href="contacto.html" class="hover:text-gray-400 underline">Contacto</a></li>
                 <li><a href="sobre_nosotros.html" class="hover:text-gray-400">Sobre Nosotros</a></li>
             </ul>
         </nav>
@@ -39,7 +43,7 @@
             <label for="consulta" class="block mt-4">Consulta:</label>
             <textarea id="consulta" name="consulta" required class="border p-2 mt-1 w-full" rows="4"></textarea>
 
-            <input type="submit" value="Enviar" class="mt-4 bg-blue-500 text-white p-2 hover:bg-blue-600">
+            <input type="submit" value="Enviar" class="mt-4 bg-red-700 text-white p-2 hover:bg-blue-600">
         </form>
     </main>
 </body>
