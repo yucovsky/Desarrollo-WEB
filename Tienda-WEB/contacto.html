@@ -10,6 +10,8 @@
             resize: none;
         }
     </style>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js" defer></script> <!-- Enlazamos el archivo JavaScript -->
 </head>
 <body class="bg-gray-100">
     <header class="bg-red-700 text-white p-4 flex flex-col items-center">
@@ -30,7 +32,7 @@
     <main class="p-5 pb-50">
         <h1 class="text-3xl font-bold">Contacto</h1>
         <p class="mt-4">Podés ponerte en contacto con nosotros mediante el siguiente formulario:</p>
-        <form class="mt-4">
+        <form id="contact-form" class="mt-4">
             <label for="nombre" class="block">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required class="border border-black p-2 mt-1 w-full rounded-lg">
             
